@@ -2,7 +2,8 @@ const fs = require("fs");
 const gm = require("./utils/generateMarkdown")
 // const writeFileAsync = gm.promisify(fs.writefile)
 // array of inquirer for user
-var inquirer = require("inquirer")
+var inquirer = require("inquirer");
+// const generateMarkdown = require("./utils/generateMarkdown");
 console.log(inquirer)
 
 
@@ -10,27 +11,33 @@ inquirer
 .prompt ([
     {
         type: "input",
-        message: "What is the Title of your Project",
+        message: "What is the Title of your Project?",
         name: "title"
 
     },
     {
         type: "input",
-        message: "Tell me about your Project what does it do and how",
-        name: "description"
+        message: "Who autored the code?",
+        name: "Yourname"
+
+    },
+    {
+        type: "input",
+        message: "Tell me about your Project what does it do and how?",
+        name: "Description"
 
     },
     {
         type: "input",
         message: "How will this app be used?",
-        name: "usage"
+        name: "installation"
 
     },
     // Work on the licensing
     {
         type: "input",
         message: "What open source license would you like to use?",
-        name: "licence"
+        name: "contents"
 
     },  {
         type: "input",
@@ -40,23 +47,33 @@ inquirer
     },  {
         type: "input",
         message: "How will this app be used?",
-        name: "installation"
+        name: "user"
+    }, {
+        type: "input",
+        message: "What test instructions would you like to be included?",
+        name: "tests"
+    }, {
+        type: "input",
+        message: "What is your github user name?",
+        name: "github"
+    }, 
 
-    },
-    
     
 ])
 
-.then(function(responce){
-    console.log(responce)
+.then(function(response){
+    
+    console.log(response)
+    
+    const answers = gm(response)
+    writeToFile("README.md", answers)
+    console.log(writeToFile)
 })
+
 // function to write README file
 function writeToFile(fileName, data) {
-    console.log(fileName, data)
-    fs.writeFile(fileName, (data), function (err) {
-        await writeToFile("READ.md", (title))
-        const answers = await promptUser();
-        console.log("Successfully wrote to a Mark down file");
+    // console.log(fileName, data)
+    fs.writeFile(fileName, data, function (err) {
         if (err) {
             throw err;
         };
@@ -65,18 +82,15 @@ function writeToFile(fileName, data) {
 }
 
 // function to initialize program
-// async function init() {
-//     try{
-//         // const title = gm()
-        
-//     }catch(err){
-//         console.log(err);
-//     }
-
+// function init() {
+//     const title = gm({
+//         title: "A new readme"
+//     })
+    
 // }
 
 // function call to initialize program
-init();
+// init();
 
 
 
