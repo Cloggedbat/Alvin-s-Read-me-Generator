@@ -17,7 +17,7 @@ function generateMarkdown(data) {
   ${data.description}
   
   ## Licences used?
-  ${data.contents}
+  ${data.license}
 
   ## Installation instructions
   ${data.installation}

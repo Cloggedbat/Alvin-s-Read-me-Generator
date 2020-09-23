@@ -24,7 +24,7 @@ inquirer
     {
         type: "input",
         message: "Tell me about your Project what does it do and how?",
-        name: "Description"
+        name: "description"
 
     },
     {
@@ -35,10 +35,21 @@ inquirer
     },
     // Work on the licensing
     {
-        type: "input",
+        type: "list",
         message: "What open source license would you like to use?",
-        name: "contents"
+        choices: [
+            'Apache License 2.0'
+            'BSD 3-Clause (Revised License)'
+            'BSD 2-Clause (FreeBSD License)'
+            'GPL (GNU General Public License)'
+            'LGPL (GNU Library or "Lesser" General Public License)'
+            'MIT license'
+            'MPL (Mozilla Public License 2.0)'
+            'Common Development and Distribution License'
+            'Eclipse Public License version 2.0'
 
+        ],
+        name: 'license'
     },  {
         type: "input",
         message: "How can someone help contribute to the project?",
