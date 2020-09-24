@@ -35,6 +35,9 @@ function generateMarkdown(data) {
   ## Github
   ${data.github}
 
+  Email:
+
+  Github: 
 
 `;
 }

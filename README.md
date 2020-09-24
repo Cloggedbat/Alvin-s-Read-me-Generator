@@ -1,4 +1,4 @@
-# READ ME Genorator
+# README Genorator
   
   ### Author
   Alvin Clemens    
@@ -11,26 +11,32 @@
   * [Contributors](#contributors)
 
   
-  
+  ![ README Genorator](/ReadmeGenorator.PNG)
+
+
   ## Description
-  This project was ment to help us have consistancy in our README.md's. This was a interesting project for many reason, one there was no HTML at all and shows that you can literaly write all your code in Javascript. I also can see how node can be used to make a more responsive and dynamic site.
+    This project was ment to help us have consistancy in our README.md's. This was a interesting project for many reason, one there was no HTML at all and shows that you can literaly write all your code in Javascript. I also can see how node can be used to make a more responsive and dynamic site.
   
   ## Licences used?
   MIT
 
   ## Installation instructions
-  You will need to install NPM
+    Please use this to write a README
 
   ## Contributors
-  Alvin Clemens
+    Alvin Clemens
 
   ## Usage
-  Please use this to write a README
+    Please use this to write a README
 
   ## Test instructions
-  No tests for this APP
+    No tests for this APP
 
   ## Github
-  ef
+  
+
+  Email: Alvinclemens@gmail.com 
+
+  Github: https://github.com/Cloggedbat/Alvin-s-Read-me-Genorator
 
 
