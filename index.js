@@ -23,13 +23,13 @@ inquirer
     },
     {
         type: "input",
-        message: "Tell me about your Project what does it do and how?",
+        message: "Tell me about your project what does it do and how?",
         name: "description"
 
     },
     {
         type: "input",
-        message: "How will this app be used?",
+        message: "How should this app be used?",
         name: "installation"
 
     },
@@ -38,15 +38,9 @@ inquirer
         type: "list",
         message: "What open source license would you like to use?",
         choices: [
-            'Apache License 2.0'
-            'BSD 3-Clause (Revised License)'
-            'BSD 2-Clause (FreeBSD License)'
-            'GPL (GNU General Public License)'
-            'LGPL (GNU Library or "Lesser" General Public License)'
-            'MIT license'
-            'MPL (Mozilla Public License 2.0)'
-            'Common Development and Distribution License'
-            'Eclipse Public License version 2.0'
+            'Apache',
+            'GNU',
+            'MIT', 
 
         ],
         name: 'license'
